@@ -45,7 +45,7 @@
     <category field="engineering"/>
     <category field="generic-base"/>
     <summary>IEEE style as per the 2021 guidelines, V 01.29.2021.</summary>
-    <updated>2025-03-14T15:02:15+00:00</updated>
+    <updated>2025-03-14T15:26:03+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -212,33 +212,6 @@
           </if>
         </choose>
       </if>
-      <else-if variable="URL">
-        <group delimiter=". " prefix=" " suffix=". ">
-          <group delimiter=": ">
-            <text term="accessed" text-case="capitalize-first"/>
-            <date variable="accessed" form="text"/>
-          </group>
-          <group prefix="[" suffix="]" delimiter=" ">
-            <choose>
-              <if variable="medium" match="any">
-                <text variable="medium" text-case="capitalize-first"/>
-              </if>
-              <else>
-                <text term="online" text-case="capitalize-first"/>
-                <choose>
-                  <if type="motion_picture">
-                    <text term="video" text-case="capitalize-first"/>
-                  </if>
-                </choose>
-              </else>
-            </choose>
-          </group>
-        </group>
-        <group delimiter=": " prefix=" ">
-          <text term="available at" text-case="capitalize-first"/>
-          <text variable="URL"/>
-        </group>
-      </else-if>
     </choose>
   </macro>
   <macro name="page">
@@ -307,14 +280,6 @@
             <text macro="issued"/>
             <text macro="status"/>
           </group>
-          <choose>
-            <if variable="URL DOI" match="none">
-              <text value="."/>
-            </if>
-            <else>
-              <text value=","/>
-            </else>
-          </choose>
           <text macro="access"/>
         </if>
         <else-if type="paper-conference speech" match="any">
