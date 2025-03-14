@@ -366,7 +366,6 @@
             <text macro="issued"/>
             <text macro="page"/>
           </group>
-          <text macro="access"/>
         </else-if>
         <else>
           <group delimiter=", " suffix=". ">
