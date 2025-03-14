@@ -9,7 +9,7 @@
       <email>rizal.fadlullah@gmail.com</email>
     </author>
     <summary>Modified IEEE for JUTISI</summary>
-    <updated>2025-03-14T18:13:11+00:00</updated>
+    <updated>2025-03-14T18:19:54+00:00</updated>
   </info>
   <locale xml:lang="en">
     <date form="text">
@@ -174,7 +174,7 @@
           </if>
         </choose>
       </if>
-      <else-if variable="URL">
+      <else-if variable="URL" is-numeric="container-title">
         <group delimiter=". " prefix=" " suffix=". ">
           <group delimiter=": ">
             <text term="accessed" text-case="capitalize-first"/>
