@@ -9,7 +9,7 @@
       <email>rizal.fadlullah@gmail.com</email>
     </author>
     <summary>Modified IEEE for JUTISI</summary>
-    <updated>2025-03-14T17:02:20+00:00</updated>
+    <updated>2025-03-14T17:33:19+00:00</updated>
   </info>
   <locale xml:lang="en">
     <date form="text">
@@ -283,7 +283,6 @@
             <text macro="page"/>
             <text macro="status"/>
           </group>
-          <text macro="access"/>
         </else-if>
         <else-if type="report">
           <group delimiter=", " suffix=".">
@@ -304,7 +303,6 @@
             <text macro="publisher"/>
             <text macro="issued"/>
           </group>
-          <text macro="access"/>
         </else-if>
         <else-if type="webpage post-weblog post" match="any">
           <group delimiter=", " suffix=".">
